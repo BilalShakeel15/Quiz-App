@@ -1,0 +1,234 @@
+body{
+  background-color: black;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li{
+  border-radius: 8px;
+}
+li:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Style for the transparent card */
+.transparent-card {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border to make the card distinct */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Style for inputs */
+.transparent-card input {
+  background-color: rgba(185, 48, 48, 0.9); /* Slightly more opaque white background */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Light border for inputs */
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  margin-bottom: 1rem; /* Space between input fields */
+}
+
+/* Style for buttons */
+.transparent-card button {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* Text color for buttons */
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.transparent-card button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+
+/* Style for the transparent form */
+.transparent-form {
+  background-color: rgba(255, 255, 255, 0.6); /* Slightly opaque white background */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border to make the form distinct */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Style for inputs */
+.transparent-form input {
+  background-color: rgba(255, 255, 255, 1); /* Fully opaque background for better readability */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Light border for inputs */
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  margin-bottom: 1rem; /* Space between input fields */
+}
+
+/* Style for buttons */
+.transparent-form button {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* Text color for buttons */
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.transparent-form button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+
+
+/* Style for the result card */
+.result-card {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border to make the card distinct */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Style for result info */
+.result-info {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+/* Style for result image */
+.result-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for trophy image */
+.result-image img {
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the image */
+  max-width: 90%;
+  height: auto;
+}
+
+/* Style for buttons */
+.btn-dark {
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+  background-color: #23272b; /* Slightly darker on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.btn-dark:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+
+
+
+.admin-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  opacity: 0; /* Initially hide text for animation */
+  transform: translateY(20px); /* Start position for slide-up effect */
+  animation: fadeInSlideUp 1s ease-in-out forwards; /* Trigger animation */
+}
+
+/* Define the keyframes for the fade-in and slide-up effect */
+@keyframes fadeInSlideUp {
+  to {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+  }
+}
+
+.admin-box {
+  height: 150px;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+
+.admin-opt{
+  margin-top: 7rem;
+}
+.admin-box h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+}
+
+.admin-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.admin-box:active {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.container-addquestion {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-question-form .form-group {
+  margin-bottom: 15px;
+}
+
+.add-question-form label {
+  font-weight: bold;
+}
+
+.add-question-form .form-control {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.add-question-form .btn {
+  /* background-color: #007bff; */
+  color: #fff;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-question-form .btn:hover {
+  background-color: black;
+}
+
+
+
